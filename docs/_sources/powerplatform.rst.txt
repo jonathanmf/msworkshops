@@ -4,4 +4,6 @@
 Power Platform
 ==========================
 
+.. admonition:: Wait
 
+   Work in progress...
