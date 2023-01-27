@@ -1,16 +1,22 @@
-.. msworkshops documentation master file, created by
-   sphinx-quickstart on Fri Jan 27 16:36:56 2023.
-   You can adapt this file completely to your liking, but it should at least
+.. You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to msworkshops's documentation!
+Welcome to Microsoft Workshops's documentation!
 =======================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
+.. toctree::
+   :caption: Product Hands-on Labs
+   :maxdepth: 2
+   :hidden:
 
+.. toctree::
+   :caption: Hackathons
+   :maxdepth: 2
+   :hidden:
 
 Indices and tables
 ==================
@@ -18,3 +24,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
