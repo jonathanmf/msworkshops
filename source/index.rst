@@ -4,6 +4,8 @@
 Welcome to Microsoft Workshops's documentation!
 =======================================
 
+.. Hidden TOCs
+
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
