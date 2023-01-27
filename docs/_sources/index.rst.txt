@@ -15,6 +15,13 @@ Welcome to Microsoft Workshops's documentation!
    serverless
    powerplatform
 
+.. toctree::
+   :caption: What The Hack 
+   :maxdepth: 1
+   :hidden:
+
+   wth
+
 Indices and tables
 ==================
 
