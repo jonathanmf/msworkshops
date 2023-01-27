@@ -12,9 +12,6 @@ Welcome to Microsoft Workshops's documentation!
    serverless
    powerplatform
 
-.. toctree::
-   :caption: Hackathons
-   :maxdepth: 2
 
 Indices and tables
 ==================
