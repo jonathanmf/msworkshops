@@ -13,6 +13,10 @@ Welcome to Microsoft Workshops's documentation!
    :maxdepth: 2
    :hidden:
 
+   container
+   serverless
+   powerplatform
+
 .. toctree::
    :caption: Hackathons
    :maxdepth: 2
