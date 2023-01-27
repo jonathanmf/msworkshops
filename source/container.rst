@@ -5,20 +5,16 @@ Welcome to Microsoft Workshops's documentation!
 =======================================
 
 .. toctree::
-   :maxdepth: 3
-   :caption: Contents:
-
-.. toctree::
    :caption: Product Hands-on Labs
    :maxdepth: 2
-   :hidden:
 
-   hol
+   container
+   serverless
+   powerplatform
 
 .. toctree::
    :caption: Hackathons
    :maxdepth: 2
-   :hidden:
 
 Indices and tables
 ==================
@@ -26,4 +22,6 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+
 
