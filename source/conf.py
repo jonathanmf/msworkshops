@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Microsoft Empowerment'
+project = 'Microsoft Hands-on-Labs Workshops'
 copyright = '2023, jonathan machado'
 author = 'jonathan machado'
 release = '1.0.0'

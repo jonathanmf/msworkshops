@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Containers &mdash; Microsoft Hands-on-Labs Workshops 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Serverless and integration Services" href="serverless.html" />
+    <link rel="prev" title="Welcome this Hands-on-Labs Workshops Repository!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Microsoft Hands-on-Labs Workshops
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Product Hands-on Labs</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Containers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#aks-azure-kubernetes-service">[AKS] Azure Kubernetes Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#aca-azure-container-apps">[ACA] Azure Container Apps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dapr-distributed-application-runtime">[DAPR] Distributed Application Runtime</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="serverless.html">Serverless and integration Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="powerplatform.html">Power Platform</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">What the Hack</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="wth.html">WTH Workshops</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Microsoft Hands-on-Labs Workshops</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Containers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/containers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="containers">
+<h1>Containers<a class="headerlink" href="#containers" title="Permalink to this heading"></a></h1>
+<p>A container is a loosely isolated environment that allows us to build and run software packages. These software packages include the code and all dependencies to run applications quickly and reliably on any computing environment. We call these packages container images.</p>
+<p>The container image becomes the unit we use to distribute our applications.</p>
+<hr class="docutils" />
+<section id="aks-azure-kubernetes-service">
+<h2>[AKS] Azure Kubernetes Service<a class="headerlink" href="#aks-azure-kubernetes-service" title="Permalink to this heading"></a></h2>
+<a class="reference external image-reference" href="https://aka.ms/learn/aksworkshop"><img alt="_static/aks.png" class="align-center" src="_static/aks.png" style="width: 400px;" /></a>
+<p>The decoupled design of microservices combined with the atomicity of containers make it possible to scale out apps, and respond to increased demand by deploying more container instances, and to scale back if demand is decreasing. In complex solutions, like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.</p>
+<p>Before looking at what Kubernetes is, here’s a summary of a few concepts that are key to containerized workloads.</p>
+<p><strong>What is container management?</strong></p>
+<p>Container management is the process of organizing, adding, removing, or updating a significant number of containers.</p>
+<p>Container management helps you with these otherwise manual tasks.</p>
+<p><strong>What is container orchestration?</strong></p>
+<p>A container orchestrator is a system that automatically deploys and manages containerized apps. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed app. Or, it can ensure all deployed container instances get updated if a new version of a service is released.</p>
+<p><strong>What is Kubernetes</strong></p>
+<p>Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container management tasks, and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you may already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.</p>
+<div class="topic">
+<p class="topic-title">Find the lab</p>
+<dl class="field-list simple">
+<dt class="field-odd">Link</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://stoakswks.z6.web.core.windows.net/v1">AKS hands-on-lab</a></p>
+</dd>
+</dl>
+</div>
+</section>
+<hr class="docutils" />
+<section id="aca-azure-container-apps">
+<h2>[ACA] Azure Container Apps<a class="headerlink" href="#aca-azure-container-apps" title="Permalink to this heading"></a></h2>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference external image-reference" href="https://stoacawks.z6.web.core.windows.net/"><img alt="_static/aca.png" class="align-center" src="_static/aca.png" style="width: 190px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Azure Container Apps is a new serverless container platform for applications that need to scale on demand in response to HTTPS requests, events, or simply run as always-on services or background job processing without managing VMs, orchestrators, or other cloud infrastructure. Azure Container Apps makes it easy to manage your containerized applications with built-in autoscaling, traffic routing, application lifecycle management, and service-to-service communication in a fully managed environment.</p>
+<p>While App Service, Functions, and Logic Apps provide application developers with fully-managed, high-productivity solutions for domain-specific problems, customers have to drop out of the fully-managed world and fall back to Kubernetes for full microservice applications or to run general purpose container applications. Azure container Apps fills this gap and rounds out the Azure application platform by providing high-level APIs for the most common container application scenarios, including auto-scaling, version management, application upgrades, and service-to-service communication in a fully managed environment.</p>
+<div class="topic">
+<p class="topic-title">Find the lab</p>
+<dl class="field-list simple">
+<dt class="field-odd">Link</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://stoacawks.z6.web.core.windows.net/">ACA hands-on-lab</a></p>
+</dd>
+</dl>
+</div>
+</section>
+<hr class="docutils" />
+<section id="dapr-distributed-application-runtime">
+<h2>[DAPR] Distributed Application Runtime<a class="headerlink" href="#dapr-distributed-application-runtime" title="Permalink to this heading"></a></h2>
+<a class="reference external image-reference" href="https://daprbuildworkshop.z6.web.core.windows.net/"><img alt="_static/dapr.jpg" class="align-center" src="_static/dapr.jpg" style="width: 300px;" /></a>
+<p>Dapr (Distributed Application Runtime) is a program that facilitates communication between the services of an application. Using the sidecar model, this program is designed to run “next to” a service to provide it with additional functionalities. The two processes are then independent and communicate through their localhost interfaces.The purpose of Dapr is to allow application decoupling, i.e. to reduce the number of strong dependencies between the services of an application.</p>
+<div class="topic">
+<p class="topic-title">Find the lab</p>
+<dl class="field-list simple">
+<dt class="field-odd">Link</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://daprbuildworkshop.z6.web.core.windows.net/">Dapr hands-on-lab</a></p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome this Hands-on-Labs Workshops Repository!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="serverless.html" class="btn btn-neutral float-right" title="Serverless and integration Services" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, jonathan machado.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
