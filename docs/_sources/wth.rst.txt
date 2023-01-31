@@ -1,7 +1,7 @@
 .. You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-What The Hack
+WTH Workshops
 ==========================
 |
 .. image:: _static/wth.png
