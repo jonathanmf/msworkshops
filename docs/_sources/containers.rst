@@ -25,25 +25,19 @@ Before looking at what Kubernetes is, here's a summary of a few concepts that ar
 
 Container management is the process of organizing, adding, removing, or updating a significant number of containers.
 
-The drone tracking app consists of multiple microservices, responsible for tasks like caching, queuing, or data processing. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from one another.
-
-For example, with the drone tracking app's website, you find that at specific times during the day, you need more instances of the site's caching service to keep up performance, so you add more caching service container instances.
-
-Now, assume that you've increased the number of caching instances, and need to roll out a new version of the microservice. You'll have to make sure to update all the active containers.
-
 Container management helps you with these otherwise manual tasks.
 
 **What is container orchestration?**
 
 A container orchestrator is a system that automatically deploys and manages containerized apps. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed app. Or, it can ensure all deployed container instances get updated if a new version of a service is released.
 
-**Define Kubernetes**
+**What is Kubernetes**
 
 Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads. Kubernetes abstracts away complex container management tasks, and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you may already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
 
 .. topic:: Find the lab
 
-   :Link: `AKS hands-on-lab <https://aka.ms/learn/aksworkshop/>`_
+   :Link: `AKS hands-on-lab <https://stoakswks.z6.web.core.windows.net/v1>`_
 
 ---------------------------------------------------------------------------------------
 
@@ -56,7 +50,7 @@ Kubernetes is a portable, extensible open-source platform for managing and orche
    :target: https://stoacawks.z6.web.core.windows.net/
    
 |
-Azure Container Appsis a new serverless container platform for applications that need to scale on demand in response to HTTPS requests, events, or simply run as always-on services or background job processing without managing VMs, orchestrators, or other cloud infrastructure. Azure Container Apps makes it easy to manage your containerized applications with built-in autoscaling, traffic routing, application lifecycle management, and service-to-service communication in a fully managed environment.
+Azure Container Apps is a new serverless container platform for applications that need to scale on demand in response to HTTPS requests, events, or simply run as always-on services or background job processing without managing VMs, orchestrators, or other cloud infrastructure. Azure Container Apps makes it easy to manage your containerized applications with built-in autoscaling, traffic routing, application lifecycle management, and service-to-service communication in a fully managed environment.
 
 While App Service, Functions, and Logic Apps provide application developers with fully-managed, high-productivity solutions for domain-specific problems, customers have to drop out of the fully-managed world and fall back to Kubernetes for full microservice applications or to run general purpose container applications. Azure container Apps fills this gap and rounds out the Azure application platform by providing high-level APIs for the most common container application scenarios, including auto-scaling, version management, application upgrades, and service-to-service communication in a fully managed environment.
 
@@ -74,9 +68,7 @@ While App Service, Functions, and Logic Apps provide application developers with
    :align: center
    :target: https://daprbuildworkshop.z6.web.core.windows.net/
    
-Dapr (Distributed Application Runtime) est un programme facilitant la communication entre les services d’une application. Utilisant le modèle du sidecar, ce programme est conçu pour s’éxecuter “à coté” d’un service pour lui apporter des fonctionalités supplémentaires. Les deux processus sont alors indépendants et communiquent à travers leurs interfaces localhost.
-
-Le but de Dapr est de permettre un découplage applicatif, c’est à dire de réduire le nombre de dépendances fortes entre les services d’une application.
+Dapr (Distributed Application Runtime) is a program that facilitates communication between the services of an application. Using the sidecar model, this program is designed to run "next to" a service to provide it with additional functionalities. The two processes are then independent and communicate through their localhost interfaces.The purpose of Dapr is to allow application decoupling, i.e. to reduce the number of strong dependencies between the services of an application. 
 
 .. topic:: Find the lab
 

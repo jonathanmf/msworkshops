@@ -12,7 +12,7 @@ This repository has been created by the Digital & Application Innovation Cloud S
 
 .. admonition:: Wait
 
-   Work in progress...
+   Work in progress... and more to come!
 
 
 .. Hidden TOCs
