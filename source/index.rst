@@ -24,6 +24,7 @@ This repository has been created by the Digital & Application Innovation Cloud S
 
    containers
    serverless
+   devops
    powerplatform
 
 .. toctree::
